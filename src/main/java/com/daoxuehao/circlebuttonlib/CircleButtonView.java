@@ -68,6 +68,8 @@ public class CircleButtonView extends SurfaceView implements SurfaceHolder.Callb
         mNormalTimeGap =  typedArray.getInt(R.styleable.DXHCircleButtonView_normalTimeGap,100);
         mPressTimeGapGap =  typedArray.getInt(R.styleable.DXHCircleButtonView_pressTimeGap,10);
 
+
+        boolean isSetZOrderOnTop = typedArray.getBoolean(R.styleable.DXHCircleButtonView_setZOrderOnTop,true);
         mGapTime = mNormalTimeGap;
 
         mPaint = new Paint();
@@ -90,6 +92,7 @@ public class CircleButtonView extends SurfaceView implements SurfaceHolder.Callb
         mSurfaceHolder = this.getHolder();
         mSurfaceHolder.addCallback(this);
 
+        setZOrderOnTop(isSetZOrderOnTop);
     }
 
     @Override

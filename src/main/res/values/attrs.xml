@@ -12,6 +12,7 @@
         <attr name="normalTimeGap" format="integer"/>
         <attr name="pressTimeGap" format="integer"/>
         <attr name="lineWidth" format="dimension"/>
+        <attr name="setZOrderOnTop" format="boolean"/>
 
     </declare-styleable>
 </resources>
