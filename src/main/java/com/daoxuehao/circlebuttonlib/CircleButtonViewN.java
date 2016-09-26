@@ -28,7 +28,6 @@ public class CircleButtonViewN extends SurfaceView implements SurfaceHolder.Call
 
     private String mText ="";
     private int mNormalColor;
-    private int mEmptyColor;
 
     private int LINE_WIDTH = 2;//3dp
     private int TEXT_SIZE = 16;//3dp
@@ -91,6 +90,10 @@ public class CircleButtonViewN extends SurfaceView implements SurfaceHolder.Call
         mSurfaceHolder.addCallback(this);
 
         setZOrderOnTop(isSetZOrderOnTop);
+    }
+
+    public void setBackgroudColor(int color){
+        mPaintBG.setColor(color);
     }
 
     @Override
