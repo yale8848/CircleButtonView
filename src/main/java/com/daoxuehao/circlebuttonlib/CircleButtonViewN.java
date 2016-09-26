@@ -54,7 +54,7 @@ public class CircleButtonViewN extends SurfaceView implements SurfaceHolder.Call
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs,R.styleable.DXHCircleButtonView);
 
         int bgColor = typedArray.getColor(R.styleable.DXHCircleButtonView_backgroundColor, Color.WHITE);
-        mNormalColor = typedArray.getColor(R.styleable.DXHCircleButtonView_backgroundColor,Color.BLUE);
+        mNormalColor = typedArray.getColor(R.styleable.DXHCircleButtonView_normalColor,Color.BLUE);
         int textColor = typedArray.getColor(R.styleable.DXHCircleButtonView_textColor,Color.WHITE);
 
         mText = typedArray.getString(R.styleable.DXHCircleButtonView_text);
