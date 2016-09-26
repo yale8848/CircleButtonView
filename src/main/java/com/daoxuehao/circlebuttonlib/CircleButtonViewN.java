@@ -92,7 +92,7 @@ public class CircleButtonViewN extends SurfaceView implements SurfaceHolder.Call
         setZOrderOnTop(isSetZOrderOnTop);
     }
 
-    public void setBackgroudColor(int color){
+    public void setCircleButtonBackgroudColor(int color){
         mPaintBG.setColor(color);
     }
 
